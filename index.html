@@ -31,6 +31,7 @@
   }
   h1 { font-size: 1.9rem; margin: 0 0 .35rem; letter-spacing: -.01em; }
   h2 { font-size: 1.15rem; margin: 2.4rem 0 .6rem; }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .45rem; color: #2b3a46; }
   .sub { color: #6b7b88; margin: 0 0 2rem; font-size: .95rem; }
   code { background: #f1f4f7; padding: .1rem .35rem; border-radius: 4px; font-size: .9em; }
   table { border-collapse: collapse; width: 100%; margin: .8rem 0; font-size: .95rem; }
@@ -44,78 +45,134 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="sub">Abyss Angler &middot; Paquett Studio &middot; Last updated 14 August 2026</p>
+<p class="sub">Abyss Angler &middot; Paquett Studio &middot; Last updated 22 September 2026</p>
 
 <p>This policy explains what happens to information when you play <strong>Abyss Angler</strong>
 (<code>com.paquettstudio.abyssangler</code>), published by Paquett Studio. It is written to be read,
 not to be skimmed past.</p>
 
 <div class="box">
-  <strong>The short version:</strong> Abyss Angler itself does not collect, transmit or share any
-  personal data. The game has no accounts and no analytics. The <strong>App Store (iOS)</strong>
-  version can show optional reward adverts; the advertising partner that serves them processes some
-  technical device information, described in section&nbsp;4. The <strong>Google Play</strong>
-  version currently contains no adverts and makes no network requests at all.
+  <strong>The short version:</strong> we never ask for your email, your name, your location or
+  your contacts. The game sends us <strong>anonymous usage counts</strong> — things like
+  “someone reached 500&nbsp;m” — tied to a random number generated on your device and to nothing
+  else; you can switch them off in <em>Settings&nbsp;› Privacy</em>. An <strong>account</strong>
+  is created only if you tap <em>“Keep a copy of my progress”</em>, and you can delete it from
+  inside the game whenever you like. <strong>Purchases</strong> are handled by Apple and Google —
+  we never see your card. The <strong>App Store (iOS)</strong> version can show optional reward
+  adverts, and the partner that serves them processes some technical device information, described
+  in section&nbsp;4. The <strong>Google Play</strong> version does not contain advertising software
+  yet; when it does, this page will say so first.
 </div>
 
 <h2>1. Information we collect</h2>
-<p><strong>We collect none.</strong> We do not ask for, store on our servers, or transmit any
-information about you. The game has no accounts and never requests:</p>
+<p>We never ask for your <strong>email address, phone number, password, location, contacts,
+photos, camera, microphone or files</strong>. The game requests none of those permissions and has
+no way to read any of it. There is no advertising profile of you, and we sell nothing to anyone.</p>
+
+<p>Two things do leave your device. One happens by default and is anonymous; the other happens only
+if you ask for it.</p>
+
+<h3>Anonymous usage counts</h3>
+
+<p>To know which parts of the game work and where people get stuck, the game sends us small
+counted events — for example <em>“a player finished the tutorial”</em>, <em>“a player reached
+500&nbsp;m”</em>, <em>“a reward advert was watched”</em>. Each one carries the name of the event,
+the time, sometimes a number (a depth, a level), the game version and whether the device is iOS or
+Android.</p>
+
+<p>They are grouped under a <strong>random identifier created on your device the first time you
+play</strong>. It is not your advertising ID, not your device serial number, and not linked to your
+name, your account or your purchases. We cannot work backwards from it to a person, and it
+disappears when you uninstall the game or delete your account.</p>
+
+<p><strong>You can turn this off.</strong> Open <em>Settings&nbsp;› Privacy&nbsp;› Usage
+statistics</em> in the game and switch it to OFF. Nothing is sent from that moment, and anything
+waiting to be sent is discarded. The game plays exactly the same either way, and we do not ask
+again.</p>
+
+<h3>An account</h3>
+
+<p>An account exists so that your progress survives a lost or replaced phone. It is created at the
+moment you tap <em>“Keep a copy of my progress”</em> on the Account screen — not at first launch,
+not in the background, not as a condition of playing. If you never tap it, no account is ever
+created and nothing about you is stored anywhere but your own device.</p>
+
+<p>When you do create one, the account holds:</p>
 <ul>
-  <li>your name, email address, phone number or any credentials;</li>
-  <li>your location, contacts, photos, camera, microphone or files;</li>
-  <li>analytics, usage statistics or diagnostic telemetry sent to us.</li>
+  <li>a random player identifier we generate (for example <code>p_4f9c…</code>);</li>
+  <li>a one-way hash of a random key your device creates the first time it registers. It is not
+      your device's advertising ID or serial number, we cannot reverse it, and it identifies the
+      installation rather than you;</li>
+  <li>a friend code — eight characters, generated by us, that you can give to people;</li>
+  <li>your captain name, if you have set one, and the portrait you chose;</li>
+  <li>a small summary of your play: level, deepest dive, how many species you have logged, how
+      many achievements you have earned, your current vessel and title, and catch counts;</li>
+  <li>the date of your last visit.</li>
 </ul>
+
+<p>If you also turn on progress backup, a copy of your save (the same data described in
+section&nbsp;2) is stored with the account so that a new phone can pick it up.</p>
+
 <p>On <strong>iOS</strong>, when the game loads or shows an advert, the advertising partner
 receives some technical information directly from your device — see section&nbsp;4. That data goes
 to them, not to us; we never see it and could not identify you from it.</p>
-<p>On <strong>Google Play</strong>, the current version contains no advertising software and makes
-no network requests. It is fully playable offline; so is the iOS version, apart from the adverts
-themselves.</p>
+
+<p>On <strong>Google Play</strong>, the current version contains no advertising software.</p>
+
+<p><strong>Both versions are playable offline.</strong> The game contacts our server for two things
+only: the usage counts, if you have left them on, and your account, if you created one. With the
+counts off and no account, it never contacts us at all.</p>
 
 <h2>2. Information stored on your device</h2>
-<p>The game saves your progress locally, using your device's standard app storage. This data never
-leaves your device and is never readable by us. It consists only of:</p>
-
+<p>The game saves your progress locally, using your device's standard app storage. Unless you have
+created an account and turned on backup, this data never leaves your device and is never readable
+by us. It consists only of:</p>
 <table>
   <tr><th>What is saved</th><th>Examples</th></tr>
-  <tr>
-    <td>Your progress</td>
-    <td>Level, experience, coins, pearls, materials, upgrades, research, vessel</td>
-  </tr>
-  <tr>
-    <td>Your collection</td>
-    <td>Which fish you have caught and your best catch of each species</td>
-  </tr>
-  <tr>
-    <td>Your choices</td>
-    <td>Captain name, chosen portrait, equipped title, sound and graphics settings</td>
-  </tr>
-  <tr>
-    <td>Daily state</td>
-    <td>Quest progress, streak counter, spins remaining, tutorial position</td>
-  </tr>
+  <tr><td>Your progress</td>
+      <td>Level, experience, coins, pearls, materials, upgrades, research, vessel</td></tr>
+  <tr><td>Your collection</td>
+      <td>Which fish you have caught and your best catch of each species</td></tr>
+  <tr><td>Your choices</td>
+      <td>Captain name, chosen portrait, equipped title, sound and graphics settings</td></tr>
+  <tr><td>Daily state</td>
+      <td>Quest progress, streak counter, spins remaining, tutorial position</td></tr>
 </table>
 
-<p>The captain name is text you type yourself. It is stored only on your device, is never sent
-anywhere, and is never shown to any other player. If you type your real name, it stays as private
-as anything else on your phone.</p>
+<p>The captain name is text you type yourself. If you have no account it stays on your device. If
+you have one, it is stored with the account and shown to people you add as friends — so it is the
+one field worth choosing with that in mind. If you type your real name, it stays as private as
+anything else on your phone until you create an account.</p>
 
 <h2>3. Deleting your data</h2>
-<p>Because your save is stored only on your device, deleting it is entirely in your hands:</p>
+<p><strong>On your device:</strong></p>
 <ul>
-  <li><strong>Android:</strong> uninstall Abyss Angler, or open <em>Settings &rsaquo; Apps &rsaquo;
-      Abyss Angler &rsaquo; Storage</em> and choose <em>Clear data</em>;</li>
-  <li><strong>iOS:</strong> delete the app from the Home Screen (touch and hold &rsaquo; Remove App
-      &rsaquo; Delete App).</li>
+  <li><strong>Android</strong>: uninstall Abyss Angler, or open Settings &rsaquo; Apps &rsaquo;
+      Abyss Angler &rsaquo; Storage and choose <em>Clear data</em>;</li>
+  <li><strong>iOS</strong>: delete the app from the Home Screen (touch and hold &rsaquo;
+      <em>Remove App</em> &rsaquo; <em>Delete App</em>).</li>
 </ul>
-<p>Either action removes your save permanently. It cannot be recovered, by you or by us. For data
-processed by the advertising partner, see their policy linked in section&nbsp;4.</p>
+
+<p><strong>On our server</strong>, if you created an account: open the Account screen in the game
+and choose <em>“Delete this account”</em>. It asks twice, and then removes the account, the backup
+copy of your save, your friend code and every friendship attached to it. Nothing is kept, and it
+cannot be undone by you or by us.</p>
+
+<p>Deleting the app alone does not delete the account, because the account is the thing that was
+meant to outlive the app. Use the in-game button for that.</p>
+
+<p>For data processed by the advertising partner, see their policy linked in section&nbsp;4. For
+purchases, see section&nbsp;5 — Apple and Google keep their own records of what you paid, and we
+cannot delete those.</p>
 
 <h2>4. Third parties and advertising</h2>
-<p><strong>Google Play version:</strong> contains no advertising networks, no analytics providers,
-no social media plugins and no third-party software development kits that collect data. Nothing is
-shared with anyone, because nothing is gathered.</p>
+<p><strong>No third-party tracking software of any kind is built into either version.</strong>
+There is no Google Analytics, no Firebase, no Facebook SDK, no attribution or install-tracking
+service and no social media plugin. The usage counts in section&nbsp;1 are our own, they go to our
+own server, and nobody else receives them.</p>
+
+<p><strong>Google Play version:</strong> contains no advertising software. The only requests it
+makes are the usage counts in section&nbsp;1 and, if you created one, your account.</p>
 <p><strong>App Store (iOS) version:</strong> shows optional <em>reward adverts</em> — short videos
 you can choose to watch in exchange for an in-game bonus. They are served by
 <strong>Unity LevelPlay</strong> (ironSource, a Unity company) and the advertising networks it
@@ -135,27 +192,80 @@ their policy: see
 <p><strong>App Tracking Transparency:</strong> the current iOS version does not request permission
 to track you across other companies' apps. Without that permission, iOS withholds the advertising
 identifier from the partner, and adverts are served without it.</p>
-<p>The game is built with the Unity engine. Unity's other data services (Analytics, Crash
-Reporting and In-App Purchasing) are disabled in both versions.</p>
+<p>The game is built with the Unity engine. Unity Analytics and Unity Crash Reporting are
+disabled in both versions. Unity's In-App Purchasing component is used to talk to the Apple and
+Google stores — see section&nbsp;6.</p>
 
-<h2>5. Payments</h2>
-<p>The current version of Abyss Angler contains no in-app purchases and no way to spend real money.
-All currencies in the game are earned by playing. Watching a reward advert never costs anything.</p>
+<h2>5. Our server</h2>
+<p>The account features in section&nbsp;1 and the usage counts both run on
+<strong>Cloudflare Workers</strong> with a <strong>Cloudflare D1</strong> database, acting as our
+processor. Requests reach it over HTTPS. Servers are located in the United States and the European
+Union, and Cloudflare transfers data under the European Commission’s standard contractual
+clauses.</p>
 
-<h2>6. Children</h2>
-<p>Abyss Angler is not directed at children under 13, and we do not knowingly collect information
-from anyone, of any age. The advertising configuration declares the game as not directed to
-children, and the game contains no chat, no social features and no way to share personal
-information.</p>
+<p><strong>We do not store your IP address in our database.</strong> Cloudflare sees it in order to
+deliver the request, as any web host does, and keeps its own short-lived logs. From it we keep one
+thing: the <strong>two-letter country code</strong> of an account, so we know which regions the
+game is played in. Not the city, not the address, not the coordinates.</p>
 
-<h2>7. Changes to this policy</h2>
-<p>If a future update introduces in-app purchases, advertising on further platforms, or any other
-feature that involves data, this policy will be updated <em>before</em> that update is released,
-and the date at the top of this page will change. Material changes will also be described in the
-update notes on the relevant store. Continuing to play after a change means you accept the revised
-policy.</p>
+<p>The usage counts are stored separately from accounts, under the random identifier described in
+section&nbsp;1. Nothing joins the two tables — there is no column that could.</p>
 
-<h2>8. Contact</h2>
+<p><strong>We do not sell, rent or share this data with anyone.</strong> It exists for two purposes:
+giving you your progress back, and telling us which parts of the game to fix.</p>
+
+<h2>6. Payments</h2>
+<p>Abyss Angler offers optional in-app purchases: packs of Black Pearls, a Starter Kit, a season
+pass and a monthly VIP subscription. Everything they contain can also be earned by playing;
+they buy time, not access.</p>
+
+<p><strong>We never see your payment details.</strong> The purchase is made with
+<strong>Apple</strong> or <strong>Google</strong>, using the payment method already on your store
+account. They take the money, they issue the receipt, and they tell the game only that a specific
+product was bought. No card number, billing address or bank detail ever reaches us or is stored by
+us.</p>
+
+<p>The VIP subscription renews automatically until you cancel it. You cancel it in your own store
+account — Settings &rsaquo; your name &rsaquo; Subscriptions on iOS — and cancelling is as easy as
+subscribing. Refunds are handled by Apple and Google under their own policies, not by us.</p>
+
+<p>Watching a reward advert never costs anything, and nothing in the game requires a purchase.</p>
+
+<h2>7. Children</h2>
+<p>Abyss Angler is <strong>not directed at children under 13</strong>, and we do not knowingly
+collect personal information from a child. We ask for no age, no email and no name beyond a captain
+nickname you type yourself, so we have no way to identify a child — and we would rather keep it
+that way than build one. The advertising configuration declares the game as not directed to
+children.</p>
+
+<p>The game contains <strong>no chat</strong> and no way to send another player free text. The only
+social features are a friend code you choose to share and small fixed gifts, and they are switched
+off in the current version.</p>
+
+<p>If you believe a child has created an account in the game, write to the address in
+section&nbsp;9 and we will delete it. No proof of identity will be demanded for a deletion
+request.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>This policy is updated <em>before</em> a change reaches you, not after, and the date at the top
+of this page changes with it. Material changes are also described in the update notes on the
+relevant store.</p>
+
+<p>Features we are building, and which are <strong>not in the game today</strong>:</p>
+
+<ul>
+  <li><strong>Reward adverts on Google Play</strong>, with the same partner and the same technical
+      data described in section&nbsp;4.</li>
+  <li><strong>Signing in with Game Center or Google Play Games</strong>, so your progress follows
+      your store account instead of a transfer code. If it ships, we will store a one-way hash of
+      the identifier those services give us — never your email address and never your real
+      name.</li>
+  <li><strong>Friends and gifts</strong>, already described in section&nbsp;1, switched on.</li>
+</ul>
+
+<p>None of these is active yet. Each one will appear on this page before it appears in the game.</p>
+
+<h2>9. Contact</h2>
 <p>Questions about this policy can be sent to
 <a href="mailto:paquettstudio@gmail.com">paquettstudio@gmail.com</a>. We aim to reply within a
 few days.</p>
