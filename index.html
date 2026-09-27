@@ -8,6 +8,11 @@
   acoperă acum AMBELE platforme și spune adevărul pentru fiecare: Google Play
   = fără reclame (build-ul din review), App Store = reclame opționale cu
   recompensă. Se republică ÎNAINTE de Submit for Review pe iOS.
+
+  Rescris 27 sept 2026, pentru 2.0: Android ARE acum reclame (aceeași
+  LevelPlay), jocul întreabă de reclamele personalizate (`ConsimtReclame`,
+  pe ambele platforme), iar prietenii sunt porniți (cadourile nu). Se
+  republică ÎNAINTE ca 2.0 să iasă din testarea internă.
 -->
 <html lang="en">
 <head>
@@ -45,7 +50,7 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p class="sub">Abyss Angler &middot; Paquett Studio &middot; Last updated 22 September 2026</p>
+<p class="sub">Abyss Angler &middot; Paquett Studio &middot; Last updated 27 September 2026</p>
 
 <p>This policy explains what happens to information when you play <strong>Abyss Angler</strong>
 (<code>com.paquettstudio.abyssangler</code>), published by Paquett Studio. It is written to be read,
@@ -58,10 +63,9 @@ not to be skimmed past.</p>
   else, and you can switch them off — see section&nbsp;1. An <strong>account</strong>
   is created only if you tap <em>“Keep a copy of my progress”</em>, and you can delete it from
   inside the game whenever you like. <strong>Purchases</strong> are handled by Apple and Google —
-  we never see your card. The <strong>App Store (iOS)</strong> version can show optional reward
-  adverts; the partner that serves them processes some technical device information, and they are
-  personalised only if you allow it — both described in section&nbsp;4. The <strong>Google Play</strong> version does not contain advertising software
-  yet; when it does, this page will say so first.
+  we never see your card. Both versions can show optional <strong>reward adverts</strong>; the
+  partner that serves them processes some technical device information, and they are personalised
+  only if you say yes when the game asks you — both described in section&nbsp;4.
 </div>
 
 <h2>1. Information we collect</h2>
@@ -114,14 +118,15 @@ created and nothing about you is stored anywhere but your own device.</p>
   <li>the date of your last visit.</li>
 </ul>
 
+<p>If you give your friend code to someone and they add you, they can see your captain name, your
+portrait and that summary of play. Nobody else can, and there is no public list of players.</p>
+
 <p>If you also turn on progress backup, a copy of your save (the same data described in
 section&nbsp;2) is stored with the account so that a new phone can pick it up.</p>
 
-<p>On <strong>iOS</strong>, when the game loads or shows an advert, the advertising partner
-receives some technical information directly from your device — see section&nbsp;4. That data goes
-to them, not to us; we never see it and could not identify you from it.</p>
-
-<p>On <strong>Google Play</strong>, the current version contains no advertising software.</p>
+<p>When the game loads or shows an advert, the advertising partner receives some technical
+information directly from your device — see section&nbsp;4. That data goes to them, not to us; we
+never see it and could not identify you from it.</p>
 
 <p><strong>Both versions are playable offline.</strong> The game contacts our server for two things
 only: the usage counts, if you have left them on, and your account, if you created one. With the
@@ -140,7 +145,7 @@ by us. It consists only of:</p>
   <tr><td>Your choices</td>
       <td>Captain name, chosen portrait, equipped title, sound and graphics settings</td></tr>
   <tr><td>Daily state</td>
-      <td>Quest progress, streak counter, spins remaining, tutorial position</td></tr>
+      <td>Quest progress, streak counter, Deep Scans remaining, tutorial position</td></tr>
 </table>
 
 <p>The captain name is text you type yourself. If you have no account it stays on your device. If
@@ -170,14 +175,12 @@ purchases, see section&nbsp;5 — Apple and Google keep their own records of wha
 cannot delete those.</p>
 
 <h2>4. Third parties and advertising</h2>
-<p><strong>No third-party tracking software of any kind is built into either version.</strong>
-There is no Google Analytics, no Firebase, no Facebook SDK, no attribution or install-tracking
-service and no social media plugin. The usage counts in section&nbsp;1 are our own, they go to our
+<p><strong>Apart from the advertising partner described below, no third-party tracking software
+is built into either version.</strong> There is no Google Analytics, no Firebase, no Facebook SDK,
+no attribution or install-tracking service and no social media plugin. The usage counts in section&nbsp;1 are our own, they go to our
 own server, and nobody else receives them.</p>
 
-<p><strong>Google Play version:</strong> contains no advertising software. The only requests it
-makes are the usage counts in section&nbsp;1 and, if you created one, your account.</p>
-<p><strong>App Store (iOS) version:</strong> shows optional <em>reward adverts</em> — short videos
+<p><strong>Both versions</strong> (from version 2.0 on Google Play) show optional <em>reward adverts</em> — short videos
 you can choose to watch in exchange for an in-game bonus. They are served by
 <strong>Unity LevelPlay</strong> (ironSource, a Unity company) and the advertising networks it
 mediates. You are never required to watch one; every advert in the game sits behind a clearly
@@ -193,17 +196,25 @@ background while you play.</p>
 <p>This is used to serve and measure adverts and to prevent fraud. It is their processing, under
 their policy: see
 <a href="https://unity.com/legal/privacy-policy">Unity's privacy policy</a>.</p>
-<p><strong>App Tracking Transparency:</strong> adverts are personalised only if you allow it. On
-iOS this is asked once, through Apple’s own Tracking prompt — Apple shows the question, not us, and
-it appears after the welcome screen, never before you have seen the game. In versions of the game
-that do not ask, the answer is treated as no: iOS withholds the advertising identifier from our
-partner and the adverts you see are never personalised.</p>
+<p><strong>Personalised adverts are your choice.</strong> The first time you play, the game asks
+you once whether adverts may be personalised, with two equal buttons, <em>Yes</em> and
+<em>No</em>. No advert is requested before you answer. Your answer is passed to our partner before
+it starts: <em>No</em> means we tell it that you have not given consent under the GDPR and that
+your information must not be sold or shared under the CCPA, so adverts are chosen without a profile
+of you. You can change your answer at any time in <em>Settings&nbsp;› Privacy&nbsp;› Personalised
+adverts</em>. On Android you can also reset or delete your advertising ID in the phone’s own
+settings (<em>Settings&nbsp;› Privacy&nbsp;› Ads</em>, or <em>Google&nbsp;› Ads</em> on some
+phones).</p>
+<p><strong>App Tracking Transparency (iOS):</strong> on iOS, personalisation also needs Apple’s
+permission. If you answer <em>Yes</em> to the game’s question, Apple’s own Tracking prompt follows —
+Apple shows that question, not us. If you answer <em>No</em>, the game does not show Apple’s prompt
+at all, and iOS withholds the advertising identifier from our partner.</p>
 
 <p><strong>Saying no changes nothing about the game.</strong> You get the same features, the same
-rewards and the same number of adverts; they are simply chosen without knowing anything about you,
-and iOS withholds the advertising identifier from our partner entirely. You can change your answer
-at any time in <em>iOS Settings › Privacy &amp; Security › Tracking</em>, and we are told only
-the answer, never who you are.</p>
+rewards and the same number of adverts; they are simply chosen without knowing anything about you.
+You can change your answer at any time in the game’s Settings, and on iOS also in <em>iOS
+Settings › Privacy &amp; Security › Tracking</em>. Your answer is kept on your phone; it is not
+sent to us.</p>
 <p>The game is built with the Unity engine. Unity Analytics and Unity Crash Reporting are
 disabled in both versions. Unity's In-App Purchasing component is used to talk to the Apple and
 Google stores — see section&nbsp;6.</p>
@@ -252,8 +263,9 @@ that way than build one. The advertising configuration declares the game as not 
 children.</p>
 
 <p>The game contains <strong>no chat</strong> and no way to send another player free text. The only
-social features are a friend code you choose to share and small fixed gifts, and they are switched
-off in the current version.</p>
+social feature is a friend code you choose to share, which lets the people you add see your
+captain name, portrait and a summary of your play. Gifts between friends are switched off in the
+current version.</p>
 
 <p>If you believe a child has created an account in the game, write to the address in
 section&nbsp;9 and we will delete it. No proof of identity will be demanded for a deletion
@@ -267,13 +279,11 @@ relevant store.</p>
 <p>Features we are building, and which are <strong>not in the game today</strong>:</p>
 
 <ul>
-  <li><strong>Reward adverts on Google Play</strong>, with the same partner and the same technical
-      data described in section&nbsp;4.</li>
   <li><strong>Signing in with Game Center or Google Play Games</strong>, so your progress follows
       your store account instead of a transfer code. If it ships, we will store a one-way hash of
       the identifier those services give us — never your email address and never your real
       name.</li>
-  <li><strong>Friends and gifts</strong>, already described in section&nbsp;1, switched on.</li>
+  <li><strong>Gifts between friends</strong> — small fixed in-game gifts, no free text.</li>
 </ul>
 
 <p>None of these is active yet. Each one will appear on this page before it appears in the game.</p>
